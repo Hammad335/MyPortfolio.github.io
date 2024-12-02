@@ -117,3 +117,142 @@ p {
     height: 4px;
   }
 }
+
+.icons-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Space between icons */
+  padding-bottom: 30px;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1e1e1e; /* Background for icons */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.icon:hover {
+  transform: scale(1.2); /* Slight zoom effect */
+  box-shadow: 0 6px 15px rgba(255, 255, 255, 0.5);
+}
+
+.tech-icon {
+  max-width: 60%; /* Ensure the logo fits well */
+  max-height: 60%;
+  animation: float 3s infinite ease-in-out; /* Add floating animation */
+}
+
+.skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  height: 100vh;
+}
+
+.left-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.illustration {
+max-width: 500px;
+  height: auto;
+
+  }
+
+.right-section {
+  flex: 1;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+.subtitle {
+  font-size: 2.0rem;
+  margin-bottom: 50px;
+  color: #9c9cbd;
+}
+
+.tech-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.tech-icons img {
+  width: 50px;
+  height: 50px;
+}
+
+.features-section {
+  background-color: #121212; /* Darker background for better contrast */
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+  color: #f5f5f5; /* Light text color */
+  margin-top: 40px;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.features li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; /* Spacing between items */
+  font-size: 1.2rem; /* Larger font size for emphasis */
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.features li:hover {
+  transform: translateX(10px); /* Smooth slide effect on hover */
+  background-color: #1e1e1e; /* Highlight the background */
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.features .iconf {
+  font-size: 2.0rem;
+  margin-right: 20px; /* Space between icon and text */
+  color: #fbc02d; /* Yellowish color for the icon */
+}
+
+.features .text {
+  font-weight: 800; /* Slightly bold text */
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.features li {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
